@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Candara', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 20px;
+}
+
+.contenedor-barra-inicio{ 
+    display: flex;
+    flex-direction: row;
+  }
+  
+.titulo{
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 2px 2px 3px rgb(0, 255, 21);
+    padding: 0;
+    margin:0;
+ }
+
+main{
+    width: 100%;
+    padding: 0px 0px 80px;
+    margin: auto;
+    margin-top: 0px;
+}
+
+header{
+    width: 100%;
+    height: 670px;
+    background: #FDFC47;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #24fe4138, #fdfd4700), url(../images/juegoludico.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #24fe4138, #fdfd4700), url(../images/juegoludico.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    position: relative;
+  }
+  
+  nav{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0px 30px;
+    height: 100px;
+    width: 100%;
+  }
+  
+  nav >a{
+    color: #13520bec;
+    font-weight: 400, bold;
+    text-decoration: none;
+    margin-right: 30px;
+  
+  }
+  
+  nav >a:hover:not(a.logo){
+    height: 100%;
+    background: hsla(121, 90%, 52%, 0.301);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items:last baseline;
+    justify-content: right;
+    flex-direction: column;
+    text-align: right;
+  }
+  
+  .textos-header h1{
+    font-size: 30px;
+    font-weight: 300, bold;
+    color: #fff;
+  }
+  
+  .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: hsl(121, 48%, 36%);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #5B8266
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #294936;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #294936;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+#rol {
+  display: block;
+  margin-top: 20px;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+
+/*footer*/
+
+footer{
+    background: #13502c;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc ;
+  
+  }
+  
+  .content-foo{
+    text-align: center;
+  }
+  
+  .content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #070507;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .content-foo p{
+    color:#ffffff;
+  
+  }
+  
+  .titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #000000;
+  
+  }
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}

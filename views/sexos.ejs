@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUPAMMAR</title>
+    <link rel="shortcut icon" id="icono" href="images\icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/admin2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="contenedor-barra-inicio">
+    <div>
+        <nav>
+            <a class="logo" href="registered_user.html"><p><img src="images\escudo.png" alt="Logotipo del semillero" width="100"></p></a>
+        </nav>
+    </div>
+    <nav>
+        <a href="/usuarios">Usuarios</a>
+        <a href="">Adopciones</a>
+        <a href="/mascotas">Mascotas</a>
+        <a href="">Donaciones</a>
+    </nav>
+    <div class="wave" style="height: 150px; overflow: hidden;">
+        <h1 style="text-align: center">SEXOS</h1>
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+        </svg>
+        <div style="text-align: right"></div>
+    </div>
+</header>
+<main class="col-12 col-s-10">
+    <section id="formulario">
+        <div id="label" class="col-2">
+            <label for="inputId">ID</label><br>
+            <label for="inputTipo">TIPO</label><br>
+        </div>
+        <div id="campos" class="col-4">
+            <input type="text" name="Id_sex" id="inputId" required>
+            <input type="text" name="Tipo_sex" id="inputTipo" required>
+ 
+
+        </div>
+    </section>
+    <section id="botones">
+        <div id="boton" class="col-4">
+            <input type="button" onclick="crearSexo()" value="Crear" id="botonCrear" />
+            <input type="button" onclick="actualizarActividad()" value="Modificar" id="botonModificar" />
+            <input type="button" onclick="eliminarActividad(id_act)" value="Eliminar" id="botonEliminar" />
+            <input type="button" onclick="limpiarCampos()" value="Limpiar Campos" id="botonLimpiar" />
+        </div>
+    </section>
+    <br>
+    <section id="lista-sexo">
+
+    </section>
+    <div id="formularioEditar" style="display: none;">
+</main>
+<footer>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Celular</h4>
+            <p>+57 319 2879639</p>
+
+        </div>
+        <div class="content-foo">
+            <h4>Email</h4>
+            <p>fundacionfupammar@gmail.com</p>
+        </div>
+
+        <div class="content-foo">
+            <h4>Ubicación</h4>
+            <p>Vereda La Montera, Don Matías, Antioquia</p>
+        </div>
+    </div>
+    <h2 class="titulo-final">&copy; Semillero de Ludica | Viviana Montoya - José Andrés Torres - Carlos Andres Palacio</h2>
+</footer>
+<script type="text/javascript" src="javascripts/sexos-adm.js"></script>
+</body>
+</html>
+
