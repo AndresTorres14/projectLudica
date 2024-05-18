@@ -1,0 +1,235 @@
+/* El ancho y alto de todas las etiquetas
+   abarca el relleno y el borde */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lucida Sans';
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  margin:auto;
+  
+}
+
+table thead tr:first-of-type {
+  background-color: rgba(107, 225, 107, 0.872);
+  font-weight: bold;
+}
+
+
+th, td{
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #1b6130;
+}
+
+#contenedorUsuarios{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+  .contenedor-barra-inicio{ 
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Header */
+header{
+    width: 100%;
+    height: 300px;
+    background: #FDFC47;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #24fe4138, #fdfd4700), url(../images/admin.avif);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #24fe4138, #fdfd4700), url(../images/admin.avif);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    position: relative;
+  }
+  
+  nav{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0px 30px;
+    height: 100px;
+    width: 100%;
+  }
+  
+  nav >a{
+    color: #13520bec;
+    font-weight: 400, bold;
+    text-decoration: none;
+    margin-right: 30px;
+  
+  }
+  
+  nav >a:hover:not(a.logo){
+    height: 100%;
+    background: hsla(121, 90%, 52%, 0.301);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+#formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#label{
+  display: flex;
+  flex-direction: column;
+}
+
+#botones{
+  font-family: 'Lucida Sans';
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#campos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2em;
+}
+
+#boton {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5em;
+}
+
+#botonLimpiar, #botonCrear, #botonEliminar, #botonModificar{
+    padding: 8px;
+    margin-bottom: 50px;
+    background-color: #155508ee;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-style: bold;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 0px 10px 0px 10px;
+}
+
+/*footer*/
+
+footer{
+    background: #13502c;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc ;
+
+  }
+
+  .content-foo{
+    text-align: center;
+  }
+
+  .content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #070507;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+  }
+
+  .content-foo p{
+    color:#ffffff;
+
+  }
+
+  .titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #000000;
+
+  }
+
+/* Breakpoint para móbiles */
+@media only screen and (max-width:599px){
+    h1{ font-size:4.5vw; /* Hace responsive, al 4.5% del ancho del viewport, el tipo de letra del h1  */}
+}
+
+/* Si el acho de la pantalla del dispositivo tiene como mínimo 600 px,      
+   aplique estos anchos a los selectores. Breakpoint para tablets */
+@media only screen and (min-width:600px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}  
+
+    h1{ font-size:4.5vw; /* Hace responsive, al 2.5% del ancho del viewport, el tipo de letra del h1  */}
+}
+
+
+
+/* Si el acho de la pantalla del dispositivo tiene como mínimo 768 px,   
+   aplique estos anchos a los selectores. Breakpoint para escritorio */
+@media only screen and (min-width:768px){
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;} 
+
+    h1{ font-size:2.5vw; /* Hace responsive, al 2.5% del ancho del viewport, el tipo de letra del h1  */}
+
+}
+
+/* Suprime el subrayado a los hipervínculos que están dentro de la etiqueta nav */
+nav a{
+    text-decoration: none;
+}

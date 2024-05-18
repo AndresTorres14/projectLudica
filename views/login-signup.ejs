@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semillero Lúdica y Saber</title>
+    <link rel="shortcut icon" id= "icono" href ="images\escudo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="contenedor-barra-inicio">
+      <div>
+        <nav>
+          <a class="logo" href='/'><p><img src="images\escudo.png" alt="Logotipo del semillero" width="100"></p></a>
+        </nav>
+      </div>
+      <nav>
+        <a href="/login-signup" >Inicio de Sesión</a>
+        <a href="/contactanos" >Contáctanos</a>
+      </nav>
+      <div class="wave" style="height: 150px; overflow: hidden;" >
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+          <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+        </svg>
+      <div style='text-align: right'></div>
+      </div>
+    </header>
+    <main>
+      <div class="contenedor__todo">
+        <div class="caja__trasera">
+          <div class="caja__trasera-login">
+            <h3>¿Ya tienes una cuenta?</h3>
+            <p>Inicia sesión para entrar en la página</p>
+            <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+          </div>
+          <div class="caja__trasera-register">
+            <h3>¿Aún no tienes una cuenta?</h3>
+            <p>Regístrate para que puedas iniciar sesión</p>
+            <button id="btn__registrarse">Regístrarse</button>
+          </div>
+        </div>
+
+        <!--Formulario de Login y registro-->
+        <div class="contenedor__login-register">
+          <!--Login-->
+          <form action="" class="formulario__login">
+            <h2>Iniciar Sesión</h2>
+            <input id="correoLogin" type="text" placeholder="Correo Electrónico">
+            <input id="contraseñaLogin" type="password" placeholder="Contraseña">
+            <button id="botonLogin">Entrar</button>
+          </form>
+
+          <!--Register-->
+          <form onsubmit="event.preventDefault(); crearUsuario()" class="formulario__register">
+            <h2>Registrarse</h2>
+            <input id= "correo" type="text" placeholder="Correo Electrónico">
+            <input id= "nombre" type="text" placeholder="Nombre">
+            <input id= "primer_apellido"  type="text" placeholder="Primer Apellido">
+            <input id= "segundo_apellido"  type="text" placeholder="Segundo Apellido">
+            <input id= "celular" type="text" placeholder="Celular">
+            <input id= "contrasenna" type="password" placeholder="Contraseña">
+            <input id= "val_contrasenna" type="password" placeholder="Repita Contraseña">
+            <select id="tipo_us" name="tipo_us">
+              <option value="">Seleccionar tipo Usuario</option>
+              <option value="profesor">Profesor</option>
+              <option value="estudiante">Estudiante</option>
+            </select>  
+            <select id="codigo_sexo" name="codigo_sexo">
+                <option value="">Seleccionar codigo sexo</option>
+                <option value="femenino">femenino</option>
+                <option value="masculino">masculino</option>              
+            </select>
+            <button type="submit">Regístrarse</button>
+          </form>
+        </div>
+      </div>
+	  </main>
+    <footer>
+      <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Celular</h4>
+            <P>+57 319 2879639 </P>
+        
+        </div>
+        <div class="content-foo">
+            <h4>Email</h4>
+            <p>semilleroludicaysaber@elpoli.edu.co</p>
+        </div>
+        
+        <div class="content-foo">
+            <h4>Ubicación</h4>
+            <p>El Poblado, Medellín. Sede Medellín. Centro Regional Oriente</p>
+        </div>
+      </div>
+      <h2 class="titulo-final">&copy; Semillero Lúdica Desing | José Andrés Torres - Viviana montoya - Carlos palacios</h2>
+    </footer>
+	  <script type="text/javascript" src="javascripts/script.js"></script>
+    <script type="text/javascript" src="javascripts/funciones.js"></script>
+  </body>
+</html>
